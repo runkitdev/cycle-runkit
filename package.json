@@ -5,5 +5,12 @@
   "peerDependencies": {
     "@cycle/dom": "^17.4.0",
     "xstream": "^10.8.0"
-  }
+  },
+  "name": "cycle-runkit",
+  "version": "0.1.0",
+  "description": "Cycle.js RunKit Component.",
+  "main": "src/index.js",
+  "repository": "git@github.com:runkitdev/cycle-runkit.git",
+  "author": "edge <functaire@gmail.com>",
+  "license": "MIT"
 }
