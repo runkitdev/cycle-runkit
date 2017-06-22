@@ -8,11 +8,13 @@ function Embed(sources) {
 	const onURLChanged = $.never()
 	const onEvaluate = $.never()
 
-	sources.evaluate.addListener({
-		next() {
-			state.embed.evaluate()
-		}
-	})
+	if (sources.hasOwnProperty('evaluate')) {
+		sources.evaluate.addListener({
+			next() {
+				state.embed.evaluate()
+			}
+		})
+	}
 
 	const vt = sources.props.map(props => {
 		const { source, preamble } = props
